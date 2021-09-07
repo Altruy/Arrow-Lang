@@ -1,0 +1,9 @@
+FUNC fib (INT n) ->
+    IF ((n == 1) OR (n==0)) ->
+        RET n
+    :>
+    RET fib : (n-1) : + fib : (n-2) : 
+
+:>
+
+PRINT -> "Value:", fib : 9 : ;

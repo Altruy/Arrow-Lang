@@ -1,0 +1,13 @@
+STRING mystring -> ("theory" + " of ") + "automata"
+INT a -> 1
+INT b -> 4
+b++
+PRINT -> mystring ;
+FLOAT c -> (1.5+0.5+2)
+FLOAT determinant -> b ^ 2 - 4 * a * c
+FLOAT quadratic_root1 -> (-b + determinant^(1/2)) / ( 2.0*a )
+PRINT -> quadratic_root1 ;
+BOOL d -> FALSE
+PRINT -> NOT TRUE == (NOT (NOT d)) AND (TRUE != 0) ;
+PRINT -> 4 + "A";
+PRINT -> "Hi" ;

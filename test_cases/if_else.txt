@@ -1,0 +1,20 @@
+BOOL isRaining -> FALSE
+BOOL isSnowing -> TRUE
+INT temperature -> 0
+IF (isRaining == TRUE) ->
+    IF (temperature > 45) ->
+        PRINT -> "Wear lightweight raincoat" ; :>
+    EL (temperature == 45) ->
+        PRINT -> "Wear lightweight raincoat"; :>
+    ELS -> 
+        PRINT -> "Wear fleece and raincoat" ; :>
+:>
+EL (isSnowing != FALSE) ->
+    IF (temperature > 20) ->
+        PRINT ->"Wear soft shell jacket" ; :>
+    EL (temperature >= 0) -> PRINT -> "Wear down jacket" ; :>
+    ELS -> PRINT -> "Wear base layers and down jacket" ; :>
+:>
+ELS -> 
+    PRINT -> "It is hard to come up with interesting examples";
+:>
